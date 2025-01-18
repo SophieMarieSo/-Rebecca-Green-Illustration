@@ -6,7 +6,9 @@ body {
   height: 100dvh;
   width: 100%;
 }
-
+.borders {
+  border: 1px solid red;
+}
 /* 구글 폰트 inder -title ---main page에 맞게 수정함 */
 .inder-regular {
   font-family: "Inder", serif;
@@ -222,66 +224,25 @@ body {
   }
 }
 
-.subscribe-box {
-  width: 100%;
-  max-width: 1228px;
-  min-height: 300px;
-  background-color: #92b1c4;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 31px 14px;
-
-  .title {
-    font-size: 30px;
-    font-weight: 400;
-    font-family: "Inder", serif;
+.icon-container {
+  .fa-instagram {
+    color: #e4405f;
   }
 
-  .info {
-    padding: 0;
-    color: #fff;
-    line-height: 1.2em;
+  .fa-pinterest {
+    color: #cb2127;
   }
 
-  form {
-    display: flex;
-    justify-content: center;
-    gap: 13px;
-
-    input {
-      box-shadow: inset 0px 0px 0px 1px #fff;
-      padding: 15px;
-      outline: none;
-      border: 1px solid #fff;
-      min-width: 235px;
-      letter-spacing: 1px;
-    }
-
-    button {
-      box-shadow: inset 0px 0px 0px 1px #fff;
-      border-radius: 3px;
-      padding: 1em 2.5em;
-      text-align: center;
-      outline: none;
-      background-color: #92b1c4;
-      border: 1px solid #fff !important;
-      font-size: 16px;
-      text-transform: uppercase;
-      white-space: nowrap;
-      color: #fff;
-      letter-spacing: 2px;
-    }
-
-    button:hover {
-      background-color: #fff;
-      color: black;
-      transition: 0.3s;
-    }
+  .fa-instagram:hover,
+  .fa-pinterest:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
   }
 }
 
 /*--------------------------- footer 영역 관련----------------------- */
+
 .shop-img {
   width: 100%;
   max-width: 200px;
@@ -289,19 +250,4 @@ body {
 .bulletin-link {
   text-decoration: none;
   color: #92b1c4;
-}
-
-.icon-container {
-  .fa-instagram {
-    color: #e4405f;
-  }
-  .fa-pinterest {
-    color: #cb2127;
-  }
-  .fa-instagram:hover,
-  .fa-pinterest:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-  }
 }
