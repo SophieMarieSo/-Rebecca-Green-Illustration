@@ -6,7 +6,9 @@ body {
   height: 100dvh;
   width: 100%;
 }
-
+.borders {
+  border: 1px solid red;
+}
 /* 구글 폰트 inder -title ---main page에 맞게 수정함 */
 .inder-regular {
   font-family: "Inder", serif;

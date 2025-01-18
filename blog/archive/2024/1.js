@@ -142,18 +142,9 @@ export const detail = {
       class: "full-width-line mt-5 mb-5",
     },
     {
-      type: "image_collection",
-      value: [
-        "collection1.jpg",
-        "collection2.jpg",
-        "collection3.jpg",
-        "collection4.jpg",
-        "collection5.jpg",
-        "collection6.jpg",
-        "collection7.jpg",
-        "collection8.jpg",
-        "collection9.jpg",
-      ],
+      type: "text",
+      value: "JÚLIA SARDÀ",
+      tag: "p",
     },
     {
       type: "line",
