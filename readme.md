@@ -2,6 +2,17 @@
 
 안녕하세요! **레베카 그린 일러스트레이션** 웹사이트에 오신 것을 환영합니다. 이곳은 레베카 그린의 아름다운 일러스트레이션 세계를 탐험할 수 있는 공간으로, 여러분이 그녀의 작품과 이야기에 쉽게 접근할 수 있도록 돕기 위해 만들어졌습니다.
 
+## 링크
+https://rebecca-green-illustration.netlify.app/
+
+## Developers
+|[한사라](https://github.com/namee-h)|[안은진](https://github.com/SophieMarieSo)|[한승완](https://github.com/greatanteater)|[이서현](https://github.com/seohyun-leeya)|[장민정](https://github.com/molly7973)|
+|:---:|:---:|:---:|:---:|:---:|
+|프로젝트 리더|스크럼 마스터|팀원|팀원|팀원|
+|main 페이지|work 페이지|blog 페이지|books 페이지|about 페이지|
+
+
+
 ## 목차
 
 - [개요](#개요)
