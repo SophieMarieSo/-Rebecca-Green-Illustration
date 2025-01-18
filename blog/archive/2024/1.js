@@ -1,6 +1,6 @@
 export const detail = {
-  title: "NOVEMBER | LET'S REVEL IN THE DETAILS",
-  date: "2024-01-15",
+  title: "Nestling in for Winter",
+  date: "2024-12-25",
   thumb: "thumb.jpg",
   imageEnable: true,
   image: "title.jpg",
@@ -9,42 +9,38 @@ export const detail = {
     {
       type: "text",
       value:
-        "<em>I don’t want to build the house, I only want to choose the doorknobs in the house.</em>",
+        '"There is a privacy about it which no other season gives you... In spring, summer and fall people sort of have an open season on each other; only in the winter, in the country, can you have longer, quiet stretches when you can savor belonging to yourself."',
+      tag: "p",
+      class: "pinyon center mb-0",
+    },
+    {
+      type: "text",
+      value: "- Ruth Stout",
+      tag: "p",
+      class: "pinyon center",
+    },
+    {
+      type: "text",
+      value:
+        "On the very morning I am writing this and sending it into the world, I awoke to snow. Every branch and blade of grass coated with a thick white blanket. It doesn’t matter how many winters I’ve seen - there is always magic in that first big snow. I am a four season person through and through having lived most of my life in Michigan. The seasons guide the flow of my life and my work. While we’ve lived in warm, places  - Phoenix, Tennessee, Japan, I always knew we’d settle somewhere with a proper winter. It seems we have. Apparently this area gets three different types of snow storms - nor'easters, lake effect storms and Alberta clippers, which is <em>a lot of snow.</em> This year I plan to get out, try my legs once more at cross country skiing, snowshoeing, and hiking, but I also plan to spend a lot of time <em>nestling in.</em>",
+      tag: "p",
+      class: "mb-5",
+    },
+    {
+      type: "image",
+      value: "1.jpg",
+      class: "mb-5",
+    },
+    {
+      type: "text",
+      value:
+        "We don’t technically have the best place to nestle - a quarter of our home is still gutted and everything we own is still in boxes. Perhaps though, because I’m seeking comfort so badly, the tiny areas of it are easy for me to sink into. Our bed, with it’s rug ‘neath it and the duvet on it, a little bench beside it crowded with books. That’s enough. The candle lit when the sun goes down, a definite source of comfort. Our little makeshift coffee station in our hallway. That helps. And a shower, a hot shower. That’s all you need!",
       tag: "p",
     },
     {
       type: "text",
       value:
-        "I don’t know how to layout a room but I can pick out vintage pillows or prints! Laying out a picture book spread stresses me out - I detest figuring out composition…but the details within the illustration…those glorious pom poms on the shoes…those teeny buttons on the collar of a bear’s shirt…that’s all I care about thank you!",
-      tag: "p",
-    },
-    {
-      type: "text",
-      value:
-        "This wouldn’t be my year if I didn’t have an entire blog post dedicated to details so for this lovely little November installment of my Yearlong Celebration of Things I Love About Art - we’re zooming way in and reveling in the tiniest of features.",
-      tag: "p",
-    },
-    {
-      type: "text",
-      value:
-        "My current work has gotten much simpler but here are some older pieces which you can dig into…so much detail!",
-      tag: "p",
-    },
-    {
-      type: "image_collection",
-      value: [
-        "collection1.jpg",
-        "collection2.jpg",
-        "collection3.jpg",
-        "collection4.jpg",
-        "collection5.jpg",
-        "collection6.jpg",
-      ],
-    },
-    {
-      type: "text",
-      value:
-        "One thing I think I’m getting better as is knowing when to add detail and when to leave it out. Working on Henri and Miko has forced me to simplify in so many ways because the stories are told is graphic panels. More detail means a slower pace of storytelling and also less efficiency for me in getting it all done. But the books are still incredibly detailed - I’m just focusing my energy on world building in the right spots. Here are a couple peeks from the sketch phase of the books…(omg I can’t wait for these to come out and for you to see them - literally YEARS in the making!)",
+        "And nestling in, wintering, hibernating, is not only about physical comforts, but emotional and creative ones too. I recently read Katherine May’s book, Wintering, which was recommended to me many times. It’s a lovely book, which does traces the darker seasons of the calendar, but is more so an understanding of retreat in those darker times of life, when you must recoup, rest, and heal. One thing that resonated was her recounting of the pattern of wintering, how she could feel it coming on, and rather than blasting through the signs of weariness into total burnout, she could then and there decide to nurture herself <em>through it.</em>",
       tag: "p",
       class: "mb-5",
     },
@@ -54,92 +50,35 @@ export const detail = {
       class: "mb-5",
     },
     {
-      type: "image",
-      value: "2.jpg",
-      class: "mb-5",
-    },
-    {
-      type: "line",
-      class: "full-width-line mt-5 mb-5",
-    },
-    {
-      type: "text",
-      value: "INSPIRATIONS with RICH DETAIL",
-      tag: "p",
-      class: "center",
-    },
-    {
       type: "text",
       value:
-        "<em>“Drawing a good picture is like telling a really good lie - <br>the key is in the incidental detail.”</em>",
-      tag: "p",
-      class: "center",
-    },
-    {
-      type: "text",
-      value: "<em>- Shaun Tan</em>",
-      tag: "p",
-      class: "center",
-    },
-    {
-      type: "line",
-      class: "full-width-line mt-5 mb-5",
-    },
-    {
-      type: "text",
-      value: "SOPHIE BLACKALL",
+        "I am usually pretty good about taking care of myself and my mental health through shifting workloads, and only once have experienced an internal crisis after of powering through pain. My Aunt, whom I love very much (and the only extended family I’ve ever been close with) died from cancer in 2017 and instead of stopping to grieve, I worked harder. It was a tough lesson, lots of therapy, lots of reconstructing. And now, I can see myself again trying that very tactic to somehow deny a very big and painful loss. I did take time to grieve last fall when we lost our little one and have done many things to aid in healing since. But it was also a major year for work, moving, selling a house, buying one too, and trying to settle into a normal routine.",
       tag: "p",
     },
     {
       type: "text",
       value:
-        "I’ve been patiently waiting to put Sophie Blackall on this list, though I knew it must be for the right thing! One of the things that stands out to me about her work is the incredible level of craft, detail and care. I had the immense joy of attending Milkwood last Summer and we got to see the originals for Farmhouse and my mind was blown! So many insanely intricate details. (She even lifted the covers off the characters in bed and underneath they were illustrated with full pajamas and toes!) She’s illustrated over 50 book, won a multitude of awards (including two Caldecotts!) and still has the capacity to seemingly put care into everything she puts out into the world. (For a treat, watch some BTS from Farmhouse!)",
+        "I’ve been feeling my own signs of wintering for a while, or rather, I don’t feel them which is concerning because I’m a big feeler. Things that used to fill me with tenderness, rage, utter joy, seem to have a dullness to them. The sharpness of it all is gone. Creatively, this is terrifying if I’m honest. The deepest source, where all my work sprang from…it’s there but also hard to access. I also am struggling with the energy to give and giving is a big part of who I am. Most of my adult life I’ve had the heart of a host, and second best, a gracious guest. Now, I feel more like a witness who does not want to host a party or go to one, but instead to stand outside the window and just…witness. All of this for me is a clue that I need to take care of myself.",
       tag: "p",
-    },
-    {
-      type: "image",
-      value: "2.jpg",
-      class: "mb-5",
     },
     {
       type: "text",
-      value: "Interior from Farmhouse, ©Sophie Blackall",
+      value: "I need to nestle in for the winter.",
       tag: "p",
-    },
-    {
-      type: "image",
-      value: "2.jpg",
-      class: "mb-5",
+      class: "pinyon",
     },
     {
       type: "text",
       value:
-        "Sophie showing us her originals at Milkwood (and us all losing our minds!)",
+        "While I’m cozying in, I thought I’d share some wintery comforts with you, things that are helping me get through these long months ahead. Whether it’s winter where you are too, or you’re just needing some extra warmth, I hope these little treasures help fill you up. Some are gems everyone loves and some are my closet loves that make me feel old and nerdy, and some are weird and you might hate them, but whatever. Let the nestling begin!",
       tag: "p",
-    },
-    {
-      type: "image",
-      value: "2.jpg",
-      class: "mb-5",
+      class: "pinyon",
     },
     {
       type: "text",
-      value: "Interior from If You Come To Earth, © Sophie Blackall",
+      value: "A Collection of Winter Treasures…",
       tag: "p",
-    },
-    {
-      type: "image",
-      value: "2.jpg",
-      class: "mb-5",
-    },
-    {
-      type: "text",
-      value: "Interior from Hello Lighthouse, ©Sophie Blackall",
-      tag: "p",
-    },
-    {
-      type: "line",
-      class: "full-width-line mt-5 mb-5",
+      class: "bold mt-5 mb-5",
     },
     {
       type: "image_collection",

@@ -24,7 +24,7 @@ export class Gallery {
 
       const img = document.createElement("img");
       img.src = `./images/${item.year}/${i + 1}/${item.thumb}`;
-      img.className = "img-fluid";
+      img.className = "img";
       img.alt = item.title;
       img.style.cursor = "pointer";
       img.style.width = "100%";
@@ -76,10 +76,10 @@ export class Gallery {
 
   createButton() {
     const dropdown = document.createElement("div");
-    dropdown.className = "dropdown";
+    dropdown.className = "dropdown mt-5";
 
     const button = document.createElement("button");
-    button.className = "btn btn-secondary dropdown-toggle rounded-0";
+    button.className = "btn btn-light dropdown-toggle rounded-0";
     button.type = "button";
     button.setAttribute("data-bs-toggle", "dropdown");
     button.setAttribute("aria-expanded", "false");
@@ -92,7 +92,7 @@ export class Gallery {
 
     this.archive.forEach((item, i) => {
       const count = this.archive[i].length;
-      const text = `${item[i].year}(${count})`;
+      const text = `${item[0].year}(${count})`;
       const action = {
         text,
       };

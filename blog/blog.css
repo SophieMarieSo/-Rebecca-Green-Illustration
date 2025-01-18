@@ -1,106 +1,17 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  height: 100dvh;
-  width: 100%;
-}
-.borders {
-  border: 1px solid red;
-}
-/* 메인 컨테이너 영역 */
-.main-container-area {
-  padding: 45px;
-}
-/* ----------------------------------------------------네브영역---------------------------------------------------- */
-/* 네브바 영역 */
-.main-nav-area {
-  display: flex;
-  justify-content: space-between;
-}
-.main-logo-img {
-  width: 310px;
-}
-.main-nav-item-area {
-  display: flex;
-  width: 399.275px;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-nav-item-area > a {
-  text-decoration: none;
-  color: #181716;
-  font-family: brother-1816-printed;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-}
-/* 반응형 타입 네브바 */
-.reaction-type-menu {
-  position: relative;
-  padding: 0;
-  display: none;
-  flex-direction: column-reverse;
-  margin: 0;
-}
-#menu-button {
-  background-color: white;
-  border: none;
-  font-weight: 400;
-  margin-top: 0;
-  padding-top: 0;
-  cursor: pointer;
-}
-/* 기본 상태에서 메뉴 숨기기 */
-.reaction-type-menu-item {
-  display: flex; /* flex는 유지 */
-  flex-direction: column;
-  gap: 10px;
-  max-height: 0; /* 높이를 0으로 설정 */
-  overflow: hidden; /* 넘치는 내용 숨기기 */
-  transition: max-height 0.3s ease, padding 0.3s ease; /* 부드러운 애니메이션 */
-  padding: 0; /* 초기 패딩 제거 */
-}
-
-.reaction-type-menu-item > a {
-  text-decoration: none;
-  /* padding-bottom: 20px; */
-  color: #181716;
-}
-.reaction-type-menu-item.active {
-  max-height: 300px; /* 메뉴가 열릴 때의 최대 높이 (적절히 설정) */
-  padding: 10px 0; /* 메뉴가 열릴 때 패딩 추가 */
-}
-/* ----------------------------------------------------네브영역---------------------------------------------------- */
-
 * {
   user-select: none;
 }
 
 .blog-container-area {
+  padding: 45px;
   font-family: "Kurale", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
 }
 
-/* 구글 폰트 inder -title */
-.inder-regular {
-  font-family: "Inder", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 2em;
-  letter-spacing: 2px;
-}
-/* 구글 폰트 kurale -description */
-.kurale-regular {
-  font-family: "Kurale", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+.row {
+  padding: 0 12px;
 }
 
 #post {
@@ -131,7 +42,7 @@ body {
 }
 
 .card {
-  border-radius: 0;
+  border: none;
 }
 
 .card-body {
@@ -152,7 +63,9 @@ body {
 }
 
 .pagination {
-  background-color: skyblue;
+  padding: 20px 0;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
 }
 
 /* 설정 */
@@ -171,29 +84,11 @@ body {
   background-color: #000;
 }
 
-@media (max-width: 995px) {
-  /* ----------------------네브영역----------------------- */
-  .main-nav-area {
-    position: relative;
-    padding-bottom: 50px;
-  }
-  .main-nav-item-area {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  /* ----------------------네브영역----------------------- */
+.caption {
+  font-size: 10px;
 }
-@media (max-width: 772px) {
-  /* ----------------------네브영역----------------------- */
-  .main-nav-area {
-    display: none;
-  }
-  .main-container-area {
-    padding-top: 0;
-  }
-  .reaction-type-menu {
-    display: flex;
-  }
-  /* ----------------------네브영역----------------------- */
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
 }
