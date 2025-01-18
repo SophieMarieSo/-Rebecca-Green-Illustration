@@ -162,6 +162,21 @@ body{
         display: block;
     }
 }
+
+.icon-container {
+    .fa-instagram {
+      color: #E4405F;
+    }
+    .fa-pinterest {
+      color: #CB2127;
+    }
+    .fa-instagram:hover,
+    .fa-pinterest:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
 /*--------------------------- footer 영역 관련----------------------- */
 
 /*-- 메인페이지 section 1 --*/
