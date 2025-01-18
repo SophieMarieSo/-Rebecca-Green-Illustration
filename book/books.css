@@ -118,9 +118,9 @@
 
 
 
-/* footer 영역 관련 */
+  /* ----------------------footer 영역 관련 --------------------*/
 
-.footer-line {
+  .footer-line {
     border: none;
     color: #bbb;
     background-color: #bbb;
@@ -136,7 +136,13 @@
 .footer-dot a {
     text-decoration: none;
     color: #92b1c4;
-    font-family: Noto sans mono;
+}
+.footer-second-info{
+    font-style: oblique;
+    font-size: 14px;
+}
+.footer-third-line{
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width:48rem){
@@ -147,7 +153,22 @@
         display: block;
     }
 }
-/* footer 영역 관련 */
+
+.icon-container {
+    .fa-instagram {
+      color: #E4405F;
+    }
+    .fa-pinterest {
+      color: #CB2127;
+    }
+    .fa-instagram:hover,
+    .fa-pinterest:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
+/*--------------------------- footer 영역 관련----------------------- */
 
 /* 하단 고정 쿠키 배너영역 */
 .main-cookies-banner-area{
