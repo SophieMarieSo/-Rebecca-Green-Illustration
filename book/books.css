@@ -170,6 +170,25 @@
   }
 /*--------------------------- footer 영역 관련----------------------- */
 
+/* 구글 폰트 inder -title ---main page에 맞게 수정함 */
+.inder-regular {
+    font-family: "Inder", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+/* 구글 폰트 kurale -description ---main page에 맞게 수정함 */
+  .kurale-regular {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  
 /* 하단 고정 쿠키 배너영역 */
 .main-cookies-banner-area{
     padding: 0;
@@ -201,6 +220,7 @@
 /* 메인 컨테이너 영역 */
 .main-container-area{
     padding: 45px;
+    text-align: center;
 }
 /* ----------------------------------------------------네브영역---------------------------------------------------- */
  /*------------------- 네브바 폰트-------------------------------------- */
