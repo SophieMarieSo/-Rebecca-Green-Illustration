@@ -154,6 +154,10 @@ export class Post {
         if (this.blog.currentPageNumber > 0) {
           this.blog.currentPageNumber--;
           this.blog.changePost(this.blog.currentPageNumber);
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         } else {
           this.blog.currentArchiveNumber--;
           this.blog.currentPageNumber = details.length - 1;
@@ -162,11 +166,19 @@ export class Post {
             this.blog.currentArchiveNumber,
             this.blog.currentPageNumber
           );
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         }
       } else {
         if (this.blog.currentPageNumber > 0) {
           this.blog.currentPageNumber--;
           this.blog.changePost(this.blog.currentPageNumber);
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         } else {
           console.log("이전 페이지 없음");
         }
@@ -209,6 +221,10 @@ export class Post {
         } else {
           this.blog.currentPageNumber++;
           this.blog.changePost(this.blog.currentPageNumber);
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         }
       } else {
         if (this.blog.currentPageNumber >= details.length - 1) {
@@ -218,9 +234,17 @@ export class Post {
             this.blog.currentArchiveNumber,
             this.blog.currentPageNumber
           );
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         } else {
           this.blog.currentPageNumber++;
           this.blog.changePost(this.blog.currentPageNumber);
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         }
       }
     };
