@@ -254,7 +254,7 @@ body {
       padding: 15px;
       outline: none;
       border: 1px solid #fff;
-      min-width: 235px;
+      min-width: 2em;
       letter-spacing: 1px;
     }
 

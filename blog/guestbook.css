@@ -37,6 +37,7 @@
 
 .message_header > p {
   margin: 0;
+  color: gray;
 }
 
 #form {
