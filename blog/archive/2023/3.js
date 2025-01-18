@@ -1,6 +1,6 @@
 export const detail = {
-  title: "Settling In",
-  date: "2024-05-20",
+  title: "Settling In 2024",
+  date: "2025-01-15",
   thumb: "thumb.jpg",
   imageEnable: false,
   image: "",
@@ -22,12 +22,10 @@ export const detail = {
       value:
         "This month, we’re selling our house, potentially buying a new one, (but an old one - you know me!) packing up our things, putting Mori in the car and heading to Syracuse, NY. A new adventure awaits. I’ve scooped up an adorable studio in a warehouse full of artists (thanks to my pal Ginnie Hsu) and I’m eager to explore the hiking trails and eat all the food! Also it sort of blows my mind that I’ll be able to shop for art supplies at an actual store where I can feel the paper and see the colors in person. Dreams do come true!",
       tag: "p",
-      class: "mb-5",
     },
     {
       type: "image",
       value: "1.jpg",
-      class: "mb-5",
     },
     {
       type: "text",
@@ -39,12 +37,10 @@ export const detail = {
       value:
         "Throughout all my past moves, I haven’t pushed pause on my work and I’d doubt if my clients even noticed a change. I’ve finished picture book work in the middle of an empty room, a cardboard box for a studio table. A Little Princess was painted in a car garage, Loujain Dreams of Sunflowers at a dining room table. Really, where ever there was a flat surface and adequate light, I made it work. But now I’m getting old and wise (and tired!) and I’d rather let this move be a little more chill.",
       tag: "p",
-      class: "mb-5",
     },
     {
       type: "image",
       value: "2.jpg",
-      class: "mb-5",
     },
     {
       type: "text",
@@ -62,12 +58,10 @@ export const detail = {
       value:
         "If you’re in The Dessert Club Patreon, you’ll still find the same amount of videos, posts, audio chats, and the like. If you aren’t part of The Dessert Club but would like to support my work and get regular posts, you can do so here. It costs less than a latte. :)",
       tag: "p",
-      class: "mb-5",
     },
     {
       type: "image",
       value: "3.jpg",
-      class: "mb-5",
     },
     {
       type: "text",

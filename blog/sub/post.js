@@ -66,7 +66,7 @@ export class Post {
           imgWrapper.appendChild(imgElement);
         } else if (item.type === "image_collection") {
           const rowDiv = document.createElement("div");
-          rowDiv.className = "row";
+          rowDiv.className = `row ${item.class}`;
 
           item.value.forEach((imageSrc) => {
             const colDiv = document.createElement("div");
@@ -120,38 +120,31 @@ export class Post {
     }
 
     const pagination = document.createElement("div");
-    pagination.className = "pagination d-flex justify-content-between";
-
+    pagination.className =
+      "pagination d-flex justify-content-between mt-5 mb-5";
     const prevButton = document.createElement("button");
-    prevButton.className = "btn btn-primary";
+    prevButton.className = "btn btn-white";
+    prevButton.innerText = "← Newer posts";
 
     console.log("currentArchiveNumber", this.blog.currentArchiveNumber);
     console.log("currentPageNumber", this.blog.currentPageNumber);
 
     if (this.blog.currentArchiveNumber > 0) {
       if (this.blog.currentPageNumber > 0) {
-        const prev = details[this.blog.currentPageNumber - 1];
-        const title = prev.title;
-        prevButton.innerText = title;
-        pagination.className = "pagination d-flex justify-content-between";
+        pagination.className =
+          "pagination d-flex justify-content-between mt-5 mb-5";
       } else {
-        const prevArchive = this.archive[this.blog.currentArchiveNumber - 1];
-        const prev = prevArchive[prevArchive.length - 1];
-        const title = prev.title;
-        prevButton.innerText = title;
-        pagination.className = "pagination d-flex justify-content-between";
+        pagination.className =
+          "pagination d-flex justify-content-between mt-5 mb-5";
       }
     } else {
       if (this.blog.currentPageNumber > 0) {
-        const prev = details[this.blog.currentPageNumber - 1];
-        const title = prev.title;
-        prevButton.innerText = title;
-        pagination.className = "pagination d-flex justify-content-between";
+        pagination.className =
+          "pagination d-flex justify-content-between mt-5 mb-5";
       } else {
-        prevButton.innerText = "없음";
         prevButton.classList.add("d-none");
-        pagination.className = "pagination d-flex justify-content-end";
-        console.log("뭐냐");
+        pagination.className =
+          "pagination d-flex justify-content-end mt-5 mb-5";
       }
     }
 
@@ -181,35 +174,29 @@ export class Post {
     };
 
     const nextButton = document.createElement("button");
-    nextButton.className = "btn btn-primary";
+    nextButton.className = "btn btn-white";
+    nextButton.innerText = "Older Posts →";
 
     if (this.blog.currentArchiveNumber >= this.archive.length - 1) {
       if (this.blog.currentPageNumber >= details.length - 1) {
-        nextButton.innerText = "없음";
         nextButton.classList.add("d-none");
-        pagination.className = "pagination d-flex justify-content-start";
+        pagination.className =
+          "pagination d-flex justify-content-start mt-5 mb-5";
       } else {
-        const next = details[this.blog.currentPageNumber + 1];
-        const title = next.title;
-        nextButton.innerText = title;
-        pagination.className = "pagination d-flex justify-content-between";
+        pagination.className =
+          "pagination d-flex justify-content-between mt-5 mb-5";
       }
     } else {
       if (this.blog.currentPageNumber >= details.length - 1) {
-        const nextArchive = this.archive[this.blog.currentArchiveNumber + 1];
-        const next = nextArchive[0];
-        const title = next.title;
-        nextButton.innerText = title;
-        pagination.className = "pagination d-flex justify-content-between";
+        pagination.className =
+          "pagination d-flex justify-content-between mt-5 mb-5";
       } else {
-        const next = details[this.blog.currentPageNumber + 1];
-        const title = next.title;
-        nextButton.innerText = title;
         if (
           this.blog.currentArchiveNumber > 0 &&
           this.blog.currentPageNumber > 0
         ) {
-          pagination.className = "pagination d-flex justify-content-between";
+          pagination.className =
+            "pagination d-flex justify-content-between mt-5 mb-5";
         }
       }
     }

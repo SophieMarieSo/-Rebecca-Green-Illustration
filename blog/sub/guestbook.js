@@ -53,7 +53,7 @@ export class GuestBook {
 
     const nameLabel = document.createElement("label");
     nameLabel.setAttribute("for", "name");
-    nameLabel.textContent = "이름";
+    nameLabel.textContent = "Author";
     this.nameInput = document.createElement("input");
     this.nameInput.type = "text";
     this.nameInput.id = "name";
@@ -69,7 +69,8 @@ export class GuestBook {
     this.contentInput.id = "content";
     this.contentInput.required = true;
     this.contentInput.style.width = "100%";
-    this.contentInput.placeholder = "멧돼지를 입력하세요.";
+    this.contentInput.style.height = "20vw";
+    this.contentInput.placeholder = "Please Enter Your Message";
 
     this.form.appendChild(contentLabel);
     this.form.appendChild(this.contentInput);
@@ -78,8 +79,8 @@ export class GuestBook {
     buttonContainer.className = "button-container";
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.className = "btn btn-success btn-sm";
-    submitButton.innerText = "글 쓰기";
+    submitButton.className = "btn btn-light btn-lg mt-3";
+    submitButton.innerText = "Post Comment…";
     buttonContainer.appendChild(submitButton);
     this.form.appendChild(buttonContainer);
 
@@ -125,12 +126,16 @@ export class GuestBook {
   renderMessages() {
     this.messageList.innerHTML = "";
     this.messages.forEach((message) => {
+      const itemDate = new Date(message.timestamp);
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      const formattedDate = itemDate.toLocaleDateString("en-US", options);
+
       const messageDiv = document.createElement("div");
       messageDiv.className = "message";
       messageDiv.innerHTML = `
         <div class="message_header">
           <strong style="margin-right: auto;">${message.name}</strong>
-          <p>${this.formatDate(message.timestamp)}</p>
+          <p>${formattedDate}</p>
         </div>
         <p>${this.formatMessageContent(message.content)}</p>
       `;

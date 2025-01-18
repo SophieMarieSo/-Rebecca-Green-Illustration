@@ -1,6 +1,6 @@
 export const detail = {
-  title: "Treasures of Autumn 2024",
-  date: "2025-01-15",
+  title: "Treasures of Autumn",
+  date: "2024-07-07",
   thumb: "thumb.jpg",
   imageEnable: true,
   image: "title.jpg",
@@ -23,6 +23,7 @@ export const detail = {
       value:
         "Since last Autumn, it hasn't been easy to fold this grief - this life alteration, into my public work. But I am an artist and writer. I filter my experiences into tangible things to share and connect (and how lucky I am to do this.) I’m truthfully still digesting everything before I can fully share our story. In my studio, work has been a respite. I have poured my heart into my book series and taught a retreat that I knew would bring me joy. ",
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "image",
@@ -33,6 +34,7 @@ export const detail = {
       value:
         "Now that Autumn is nearing however, it’s testing my creative resolve. A time which usually carries so much inspiration now feels heavy with loss and mocking. What helps of course is to accept the sadness, which in all truthfulness, I'm happy to wear. It makes me feel close to my daughter, myself, to my husband, and to everything that unfolded. I'm not afraid of grief, nor was I at any point comforted by the sentiment that grief would ease up. Every emotion does. What has surprised me though about leaning into Fall is how much resistance I feel towards it. But tragedy knows no season and I can love the little treasures of this time of year, bittersweet as they might be.",
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "image",
@@ -43,18 +45,21 @@ export const detail = {
       value:
         "If you make art, you know you must sometimes seek inspiration, for it does not always chase you down. I was determined to find a spark of creative joy towards this season, for my own sake, for art’s sake, for Sohvi’s - and after a few false starts, I did just that in the form of little painted treasures. What makes Autumn so particularly lovely is how short it is, how a flash of red is here and then gone before the long winter settles in. Witnessing the end of a life too, gives us this lightness - a reminder that it is all over, especially for some, too quickly. Nick Cave speaks of this so poetically after losing not one, but two sons.",
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "text",
       value:
         '"This feeling… of alertness to the inner-spirit of things — this humming — comes from a hard-earned understanding of the impermanence of things and, indeed, our own impermanence. This lesson ultimately animates and illuminates our lives. We become witnesses to the thrilling emergency of the present — a series of exquisite and burning moments, each extinguished as the next arises. These magical moments are the bright jewels of loss to which we cling". - Nick Cave',
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "text",
       value:
         "Bright jewels of loss. It's so bittersweet, I can hardly let it sink in without feeling everything. But also I’m ok feeling everything. The crushing weight of longing, the jealousy and unfairness of it all, the gratitude for everything I did get to experience, the acceptance and brilliance of each passing day.",
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "image_collection",
@@ -72,6 +77,7 @@ export const detail = {
       value:
         "Cheers to this new season - to the end of Summer - to the magic of Autumn. It will be gone before we know it, so I’m here and ready to nestle in, get close up with the golden leaves, feel the crisp air against my skin and who knows, I might just find loads of inspiration once again.",
       tag: "p",
+      class: "mb-5",
     },
     {
       type: "text",

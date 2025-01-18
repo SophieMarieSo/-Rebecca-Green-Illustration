@@ -3,28 +3,15 @@
 }
 
 .blog-container-area {
+  padding: 45px;
   font-family: "Kurale", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
 }
 
-/* 구글 폰트 inder -title */
-.inder-regular {
-  font-family: "Inder", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 2em;
-  letter-spacing: 2px;
-}
-/* 구글 폰트 kurale -description */
-.kurale-regular {
-  font-family: "Kurale", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+.row {
+  padding: 0 12px;
 }
 
 #post {
@@ -76,7 +63,9 @@
 }
 
 .pagination {
-  background-color: skyblue;
+  padding: 20px 0;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
 }
 
 /* 설정 */
@@ -93,4 +82,13 @@
   width: 100%;
   height: 1px;
   background-color: #000;
+}
+
+.caption {
+  font-size: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
 }

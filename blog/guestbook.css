@@ -11,19 +11,11 @@
 .message-list {
   width: 100%;
   margin: 0 auto;
-  color: rgb(0, 0, 99);
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: #f9f9f9;
+  padding: 20px;
   overflow: hidden;
 }
 
 .message {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
   background-color: #fff;
 }
 
@@ -37,9 +29,14 @@
 }
 
 .message_header {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.message_header > p {
+  margin: 0;
 }
 
 #form {
