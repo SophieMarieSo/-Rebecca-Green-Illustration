@@ -79,7 +79,7 @@ export class GuestBook {
     buttonContainer.className = "button-container";
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.className = "btn btn-light btn-lg mt-3";
+    submitButton.className = "btn btn-light btn-lg mt-3 mb-5";
     submitButton.innerText = "Post Comment…";
     buttonContainer.appendChild(submitButton);
     this.form.appendChild(buttonContainer);

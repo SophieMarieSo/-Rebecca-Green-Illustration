@@ -42,7 +42,7 @@
 }
 
 .card {
-  border-radius: 0;
+  border: none;
 }
 
 .card-body {
