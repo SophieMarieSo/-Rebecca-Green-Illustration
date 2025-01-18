@@ -1,0 +1,301 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100%;
+}
+.borders{
+    border: 1px solid red;
+}
+/* 구글 폰트 inder -title ---main page에 맞게 수정함 */
+.inder-regular {
+    font-family: "Inder", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+/* 구글 폰트 kurale -description ---main page에 맞게 수정함 */
+  .kurale-regular {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+ /*------------------- 네브바 폰트-------------------------------------- */
+/* 구글 폰트 Noto sans mono - navbar menu ---main page에 맞게 수정함 */
+.noto-sans-mono-nav-item {
+    font-family: "Noto Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  /*------------------- 네브바 폰트-------------------------------------- */
+
+.main-container-area{
+    padding: 45px;
+}
+/* 네브바 영역 */
+.main-nav-area{
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo-img{
+    width: 310px;
+}
+.main-nav-item-area{
+    display: flex;
+    width: 399.275px;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav-item-area>a{
+    text-decoration: none;
+    color: #181716;
+    font-size: 16px;
+    line-height: 24px; 
+}
+.main-nav-item-area>a:hover{
+    color: #92b1c4; /* 기본형 네브바 메뉴 호버기능 추가 */
+}
+/* 반응형 타입 네브바 */
+.reaction-type-menu {
+    position: relative;
+    padding: 0;
+    display: none;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+.reaction-type-logo{
+    object-fit: inherit;
+    width: 100%;
+}
+#menu-button{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
+}
+/* 기본 상태에서 메뉴 숨기기 */
+.reaction-type-menu-item {
+    display: flex; /* flex는 유지 */
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0; /* 높이를 0으로 설정 */
+    overflow: hidden; /* 넘치는 내용 숨기기 */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* 부드러운 애니메이션 */
+    padding: 0; /* 초기 패딩 제거 */
+  }
+  
+.reaction-type-menu-item>a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: #181716;
+}
+.reaction-type-menu-item.active {
+    max-height: 300px; /* 메뉴가 열릴 때의 최대 높이 (적절히 설정) */
+    padding: 10px 0; /* 메뉴가 열릴 때 패딩 추가 */
+  }
+
+  @media (max-width:995px) {
+        .main-nav-area{
+            position: relative;
+            padding-bottom: 50px;
+        }
+        .main-nav-item-area{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    @media (max-width:772px){
+        .main-nav-area{
+            display: none;
+        }
+        .main-container-area{
+            padding-top: 0;
+        }
+        .reaction-type-menu{
+            display: flex;
+        } 
+    }
+    /* ----------------------footer 영역 관련 --------------------*/
+
+.footer-line {
+    border: none;
+    color: #bbb;
+    background-color: #bbb;
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-dot{
+    color: black;
+}
+
+.footer-dot a {
+    text-decoration: none;
+    color: #92b1c4;
+}
+.footer-second-info{
+    font-style: oblique;
+    font-size: 14px;
+}
+.footer-third-line{
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:48rem){
+    .footer-dot{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+        display: block;
+    }
+}
+/*--------------------------- footer 영역 관련----------------------- */
+
+/* -----------------bulletin main----------------------------------- */
+
+.bulletin-img-box1,
+.bulletin-img-box2 {
+  width: auto; /* 가로는 자동 조정 */
+  height: 600px; /* 두 박스의 동일한 높이 설정 */
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  margin: 2em 0 auto; /* 중앙 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0;
+}
+@media (max-width:772px) {
+    .bulletin-img-box1{
+        width: inherit;
+        height: 100%;
+        margin: 0;
+        aspect-ratio: 1/1;
+     }
+    .bulletin-img-box1>img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.bulletin-img-box1>img,
+.bulletin-img-box2>img {
+  width: auto; /* 가로는 비율에 맞춰 조정 */
+  height: 100%; /* 부모 높이에 맞춤 */
+  object-fit: cover; /* 비율 유지하며 꽉 채움 */
+}
+
+.bulletin-img-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 4em;
+    max-width: 1200px;
+}
+.bulletin-text-area{
+    max-width: 1200px;
+    padding: 0.5em 4em;
+}
+@media (max-width:1405px){
+    .bulletin-img-area{
+        padding: 2.5em 2em;
+    } 
+}
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    gap:10px;
+}
+.section-2-img-box{
+    width: auto;
+    height: 500px;
+}
+.section-2-img-box>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 메인페이지 섹션 7  복사해서 수정*/
+.subscribe-section{
+    min-width: 49%;
+    max-height: 100%;
+    background-color: #92b1c4;
+    color: white;
+    padding: 31px 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.subscribe-section>h6{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.main-section-7-info{
+    padding: 0;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: inherit;
+}
+.main-section-7-input-area{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+.main-section-7-input-area>input{
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    min-width: 235px;
+    letter-spacing: 1px;
+}
+.main-section-7-input-area>button{
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    border-radius: 3px;
+    padding: 1em 2.5em;
+    text-align: center;
+    outline: none;
+    background-color: #92b1c4;
+    border: 1px solid #fff !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.main-section-7-input-area>button:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+}
+@media (max-width:1212px){
+    .section-2{
+        flex-direction: column;
+    }
+    .subscribe-section{
+        width: 100%;
+    }
+}
+@media (max-width:772px){
+    .main-section-7-input-area{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
