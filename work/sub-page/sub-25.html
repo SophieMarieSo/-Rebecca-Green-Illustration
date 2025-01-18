@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&family=Kurale&family=Noto+Sans+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 구글 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://assets.squarespace.com/universal/default-favicon.ico"
+    />
+    <title>Rebecca Green Illustration - WORK</title>
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/d41c0ade58.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 폰트어썸 -->
+
+    <style>
+      .shop-img {
+        width: 100%;
+        max-width: 200px;
+      }
+      .bulletin-link {
+        text-decoration: none;
+        color: #92b1c4;
+      }
+
+      .icon-container {
+        .fa-instagram {
+          color: #e4405f;
+        }
+
+        .fa-pinterest {
+          color: #cb2127;
+        }
+
+        .fa-instagram:hover,
+        .fa-pinterest:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          transition: all 0.3s ease;
+        }
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100dvh;
+        width: 100%;
+      }
+
+      /* 구글 폰트 inder -title ---main page에 맞게 수정함 */
+      .inder-regular {
+        font-family: 'Inder', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 2em;
+        letter-spacing: 2px;
+      }
+      /* 구글 폰트 kurale -description ---main page에 맞게 수정함 */
+      .kurale-regular {
+        font-family: 'Kurale', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+      }
+      /*------------------- 네브바 폰트-------------------------------------- */
+      /* 구글 폰트 Noto sans mono - navbar menu ---main page에 맞게 수정함 */
+      .noto-sans-mono-nav-item {
+        font-family: 'Noto Sans Mono', serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 2px;
+        font-variation-settings: 'wdth' 100;
+      }
+      /*------------------- 네브바 폰트-------------------------------------- */
+
+      .main-container-area {
+        padding: 45px;
+      }
+      /* 네브바 영역 */
+      .main-nav-area {
+        display: flex;
+        justify-content: space-between;
+      }
+      .main-logo-img {
+        width: 310px;
+      }
+      .main-nav-item-area {
+        display: flex;
+        width: 399.275px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .main-nav-item-area > a {
+        text-decoration: none;
+        color: #181716;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .main-nav-item-area > a:hover {
+        color: #92b1c4; /* 기본형 네브바 메뉴 호버기능 추가 */
+      }
+      /* 반응형 타입 네브바 */
+      .reaction-type-menu {
+        position: relative;
+        padding: 0;
+        display: none;
+        flex-direction: column-reverse;
+        margin: 0;
+      }
+      .reaction-type-logo {
+        object-fit: inherit;
+        width: 100%;
+      }
+      #menu-button {
+        background-color: white;
+        border: none;
+        font-weight: bold;
+        margin-top: 0;
+        padding-top: 0;
+        cursor: pointer;
+      }
+      /* 기본 상태에서 메뉴 숨기기 */
+      .reaction-type-menu-item {
+        display: flex; /* flex는 유지 */
+        flex-direction: column;
+        gap: 10px;
+        max-height: 0; /* 높이를 0으로 설정 */
+        overflow: hidden; /* 넘치는 내용 숨기기 */
+        transition: max-height 0.3s ease, padding 0.3s ease; /* 부드러운 애니메이션 */
+        padding: 0; /* 초기 패딩 제거 */
+      }
+
+      .reaction-type-menu-item > a {
+        text-decoration: none;
+        padding-bottom: 20px;
+        color: #181716;
+      }
+      .reaction-type-menu-item.active {
+        max-height: 300px; /* 메뉴가 열릴 때의 최대 높이 (적절히 설정) */
+        padding: 10px 0; /* 메뉴가 열릴 때 패딩 추가 */
+      }
+
+      @media (max-width: 995px) {
+        .main-nav-area {
+          position: relative;
+          padding-bottom: 50px;
+        }
+        .main-nav-item-area {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      @media (max-width: 772px) {
+        .main-nav-area {
+          display: none;
+        }
+        .main-container-area {
+          padding-top: 0;
+        }
+        .reaction-type-menu {
+          display: flex;
+        }
+      }
+      /* ----------------------footer 영역 관련 --------------------*/
+
+      .footer-line {
+        border: none;
+        color: #bbb;
+        background-color: #bbb;
+        height: 1px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .footer-dot {
+        color: black;
+      }
+
+      .footer-dot a {
+        text-decoration: none;
+        color: #92b1c4;
+      }
+      .footer-second-info {
+        font-style: oblique;
+        font-size: 14px;
+      }
+      .footer-third-line {
+        letter-spacing: 2px;
+      }
+
+      @media screen and (max-width: 48rem) {
+        .footer-dot {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          text-align: center;
+          display: block;
+        }
+      }
+
+      /* --------------------sub page----------------------- */
+      .image {
+        margin-bottom: 16px;
+      }
+
+      .desc {
+        margin-bottom: 16px;
+        text-align: left;
+
+        h2 {
+          font-family: 'Inder', serif;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-family: 'Kurale', serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .back-btn {
+        text-align: left;
+        margin-top: 1em;
+
+        a {
+          color: #92b1c4;
+          font-weight: 500;
+          text-decoration: none;
+          font-family: 'Kurale', serif;
+        }
+
+        a:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container main-container-area">
+      <!---------------------------------네브 영역----------------------------------->
+      <!-- 반응형 메뉴 네브바 -->
+      <nav class="container reaction-type-menu mb-5">
+        <a href="../../index.html">
+          <img
+            class="reaction-type-logo"
+            src="../../main-assets/logo_img.png"
+          />
+        </a>
+        <button class="noto-sans-mono-nav-item" id="menu-button">MENU</button>
+        <span class="reaction-type-menu-item">
+          <a class="noto-sans-mono-nav-item" href="../work.html">WORK</a>
+          <a
+            class="noto-sans-mono-nav-item"
+            href="https://www.patreon.com/rebeccagreen"
+            target="_blank"
+            >PATREON</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../blog/blog.html"
+            >BLOG</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../book/book.html"
+            >BOOKS</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../about/about.html"
+            >ABOUT</a
+          >
+        </span>
+      </nav>
+      <!-- 네브바 영역 -->
+      <nav class="container main-nav-area mb-5">
+        <a href="../../index.html">
+          <img
+            class="main-logo-img"
+            src="../../main-assets/logo_img.png"
+            alt="..."
+          />
+        </a>
+
+        <span class="main-nav-item-area">
+          <a class="noto-sans-mono-nav-item" href="../work.html">WORK</a>
+          <a
+            class="noto-sans-mono-nav-item"
+            href="https://www.patreon.com/rebeccagreen"
+            target="_blank"
+            >PATREON</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../blog/blog.html"
+            >BLOG</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../book/book.html"
+            >BOOKS</a
+          >
+          <a class="noto-sans-mono-nav-item" href="../../about/about.html"
+            >ABOUT</a
+          >
+        </span>
+      </nav>
+      <!---------------------------------네브 영역----------------------------------->
+
+      <main>
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 image">
+            <img
+              class="img-fluid"
+              src="https://images.squarespace-cdn.com/content/v1/507477a584ae87aa2d96202b/1575464027993-8JUT89P8DZNL51EMZBPP/greenparadews.jpg?format=750w"
+              alt="Image 25"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-12 desc">
+            <h2>Green Parade</h2>
+            <p>
+              Gouache on Paper
+              <br />
+              <br />
+              4 x 6”, 2019
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <section class="back-btn">
+        <a href="../work.html">back to WORK</a>
+      </section>
+
+      <footer>
+        <div class="grid gap-3">
+          <div class="p-2 g-col-12"></div>
+          <div class="p-2 g-col-12"></div>
+        </div>
+
+        <div class="container">
+          <div class="footer-line mt-5"></div>
+
+          <div>
+            <div class="pb-5 pt-5">
+              <div class="row">
+                <div class="col footer-dot text-center noto-sans-mono-nav-item">
+                  <a href="../../blog/blog.html">BLOG</a> •
+                  <a href="../work.html">WORK</a> •
+                  <a href="https://www.patreon.com/rebeccagreen" target="_blank"
+                    >PATREON</a
+                  >
+                  • <a href="../../bulletin/bulletin.html">BULLETIN</a> •
+                  <a href="../../book/book.html">BOOKS</a> •
+                  <a href="../../about/about.html">ABOUT</a> •
+                  <a href="https://www.myblankpaper.com/faq">FAQ</a>
+                </div>
+              </div>
+
+              <p class="row"></p>
+              <div
+                class="footer-second-info col footer-dot text-center kurale-regular"
+              >
+                Proud Member of the
+                <a href="https://artbrandalliance.com/">Art Brand Alliance</a> •
+                Site photography by
+                <a href="https://www.instagram.com/juliaross/">Julia Ross</a>
+              </div>
+              <p class="row"></p>
+
+              <div class="row">
+                <div
+                  class="footer-third-line col footer-dot text-center kurale-regular"
+                >
+                  ALL IMAGES © REBECCA GREEN, 2023 | ALL RIGHTS RESERVED
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center pb-5 icon-container">
+            <i
+              class="fa-brands fa-instagram fa-xl pe-2"
+              onclick="window.open('https://www.instagram.com/rebeccagreenillustration/#')"
+            ></i>
+            <i
+              class="fa-brands fa-pinterest fa-xl"
+              onclick="window.open('https://kr.pinterest.com/rebeccagreen/')"
+            ></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // -------------------------네브영역--------------------------------------
+      const menuButton = document.getElementById('menu-button');
+      const menuItems = document.querySelector('.reaction-type-menu-item');
+
+      // 버튼 클릭 이벤트 리스너 추가
+      menuButton.addEventListener('click', () => {
+        // 클래스 토글로 display 상태 전환
+        menuItems.classList.toggle('active');
+      });
+      // -------------------------네브영역--------------------------------------
+      // ---------------메인 섹션 2 이미지 모달 기능 영역--------------------------
+      const images = [
+        './main-assets/main-page-img/section-2-img1.jpg',
+        './main-assets/main-page-img/section-2-img2.jpg',
+        './main-assets/main-page-img/section-2-img3.jpg',
+        './main-assets/main-page-img/section-2-img4.jpg',
+        './main-assets/main-page-img/section-2-img5.jpg',
+        './main-assets/main-page-img/section-2-img6.jpg',
+      ];
+      const lightboxImage = document.getElementById('lightbox-image');
+      const lightBox = document.getElementById('lightbox');
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        lightBox.style.display = 'flex';
+        lightboxImage.src = images[currentIndex];
+      }
+
+      function closeLightbox() {
+        lightBox.style.display = 'none';
+      }
+
+      function changeImage(direction) {
+        currentIndex =
+          (currentIndex + direction + images.length) % images.length;
+        lightboxImage.src = images[currentIndex];
+      }
+      //   -------------------하단 쿠키 배너---------------------------------------
+
+      const cookieButton = (e) => {
+        document.querySelector('.main-cookies-banner-area').style.display =
+          'none';
+      };
+    </script>
+  </body>
+</html>
