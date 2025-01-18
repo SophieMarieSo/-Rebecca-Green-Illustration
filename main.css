@@ -162,8 +162,6 @@ body{
     }
     
 /* ----------------------------------------------------네브영역---------------------------------------------------- */
-/* ----------------------footer 영역 관련 --------------------*/
-
 .footer-line {
     border: none;
     color: #bbb;
@@ -171,34 +169,112 @@ body{
     height: 1px;
     margin-top: 16px;
     margin-bottom: 16px;
-}
-
-.footer-dot{
+  }
+  
+  .footer-dot {
     color: black;
-}
-
-.footer-dot a {
+  }
+  
+  .footer-dot a {
     text-decoration: none;
     color: #92b1c4;
-}
-.footer-second-info{
+  }
+  .footer-second-info {
     font-style: oblique;
     font-size: 14px;
-}
-.footer-third-line{
+  }
+  .footer-third-line {
     letter-spacing: 2px;
-}
-
-@media screen and (max-width:48rem){
-    .footer-dot{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        display: block;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    .footer-dot {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: center;
+      display: block;
     }
-}
-/*--------------------------- footer 영역 관련----------------------- */
-
+  }
+  
+  /* ------------------------- work ----------------------- */
+  .divider {
+    border-top: 1px solid #bbb;
+  }
+  
+  .masonry {
+    display: flex;
+    width: auto;
+  }
+  
+  .masonry-item {
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .img-container {
+    position: relative;
+    display: inline-block;
+  
+    .img-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255, 0.75);
+      color: black;
+      font-family: 'Inder', serif;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 300;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+  
+    .img-hover {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .img-container:hover {
+    cursor: pointer;
+  
+    .img-title {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.icon-container {
+    .fa-instagram {
+      color: #e4405f;
+    }
+  
+    .fa-pinterest {
+      color: #cb2127;
+    }
+  
+    .fa-instagram:hover,
+    .fa-pinterest:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
+  
+  /*--------------------------- footer 영역 관련----------------------- */
 /* 메인 섹션-1 영역 */
 .main-section-1{
     display: flex;
