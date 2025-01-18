@@ -1,0 +1,81 @@
+.guestbook {
+  position: relative;
+}
+
+.guestbook h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.message {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-form {
+  margin-top: 20px;
+}
+
+.message_header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message_header > p {
+  margin: 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.name_wrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.name_wrapper > label {
+  display: flex;
+  margin-right: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* 아래 여백 */
+}
+
+.input-group label {
+  margin-right: 10px; /* 라벨과 입력 간격 */
+}
+
+.great {
+  position: relative;
+  margin-top: 20px; /* 위 여백 추가 */
+  text-align: center; /* 중앙 정렬 */
+}
+
+.great img {
+  width: 100%; /* 이미지 너비 100% */
+  border-radius: 5px; /* 이미지 모서리 둥글게 */
+}

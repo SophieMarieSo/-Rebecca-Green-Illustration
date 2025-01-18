@@ -1,0 +1,585 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100%;
+}
+.borders{
+    border: 1px solid red;
+}
+/* 구글 폰트 inder -title ---main page에 맞게 수정함 */
+.inder-regular {
+    font-family: "Inder", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+/* 구글 폰트 kurale -description ---main page에 맞게 수정함 */
+  .kurale-regular {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  
+/* 하단 고정 쿠키 배너영역 */
+.main-cookies-banner-area{
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 93%;
+    display: none;
+}
+.main-cookies-info-area{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    min-height: 100px;
+    padding: 14px 15px;
+}
+.main-cookies-info-area>h4{
+    align-self: center;
+    justify-self: flex-start;
+}
+.main-cookies-area-button{
+    padding: 10px 20px;
+    border-radius: 0;
+    margin-left: 20px;
+}
+/* 메인 컨테이너 영역 */
+.main-container-area{
+    padding: 45px;
+}
+/* ----------------------------------------------------네브영역---------------------------------------------------- */
+ /*------------------- 네브바 폰트-------------------------------------- */
+/* 구글 폰트 Noto sans mono - navbar menu ---main page에 맞게 수정함 */
+.noto-sans-mono-nav-item {
+    font-family: "Noto Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  /*------------------- 네브바 폰트-------------------------------------- */
+
+/* 네브바 영역 */
+.main-nav-area{
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo-img{
+    width: 310px;
+}
+.main-nav-item-area{
+    display: flex;
+    width: 399.275px;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav-item-area>a{
+    text-decoration: none;
+    color: #181716;
+    font-size: 16px;
+    line-height: 24px; 
+}
+.main-nav-item-area>a:hover{
+    color: #92b1c4; /* 기본형 네브바 메뉴 호버기능 추가 */
+}
+/* 반응형 타입 네브바 */
+.reaction-type-menu {
+    position: relative;
+    padding: 0;
+    display: none;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+.reaction-type-logo{
+    object-fit: inherit;
+    width: 100%;
+}
+#menu-button{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
+}
+/* 기본 상태에서 메뉴 숨기기 */
+.reaction-type-menu-item {
+    display: flex; /* flex는 유지 */
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0; /* 높이를 0으로 설정 */
+    overflow: hidden; /* 넘치는 내용 숨기기 */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* 부드러운 애니메이션 */
+    padding: 0; /* 초기 패딩 제거 */
+  }
+  
+.reaction-type-menu-item>a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: #181716;
+}
+.reaction-type-menu-item.active {
+    max-height: 300px; /* 메뉴가 열릴 때의 최대 높이 (적절히 설정) */
+    padding: 10px 0; /* 메뉴가 열릴 때 패딩 추가 */
+  }
+
+  @media (max-width:995px) {
+        .main-nav-area{
+            position: relative;
+            padding-bottom: 50px;
+        }
+        .main-nav-item-area{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    @media (max-width:772px){
+        .main-nav-area{
+            display: none;
+        }
+        .main-container-area{
+            padding-top: 0;
+        }
+        .reaction-type-menu{
+            display: flex;
+        } 
+    }
+    
+/* ----------------------------------------------------네브영역---------------------------------------------------- */
+.footer-line {
+    border: none;
+    color: #bbb;
+    background-color: #bbb;
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .footer-dot {
+    color: black;
+  }
+  
+  .footer-dot a {
+    text-decoration: none;
+    color: #92b1c4;
+  }
+  .footer-second-info {
+    font-style: oblique;
+    font-size: 14px;
+  }
+  .footer-third-line {
+    letter-spacing: 2px;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    .footer-dot {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: center;
+      display: block;
+    }
+  }
+  
+  /* ------------------------- work ----------------------- */
+  .divider {
+    border-top: 1px solid #bbb;
+  }
+  
+  .masonry {
+    display: flex;
+    width: auto;
+  }
+  
+  .masonry-item {
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .img-container {
+    position: relative;
+    display: inline-block;
+  
+    .img-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255, 0.75);
+      color: black;
+      font-family: 'Inder', serif;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 300;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+  
+    .img-hover {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .img-container:hover {
+    cursor: pointer;
+  
+    .img-title {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.icon-container {
+    .fa-instagram {
+      color: #e4405f;
+    }
+  
+    .fa-pinterest {
+      color: #cb2127;
+    }
+  
+    .fa-instagram:hover,
+    .fa-pinterest:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
+  
+  /*--------------------------- footer 영역 관련----------------------- */
+/* 메인 섹션-1 영역 */
+.main-section-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+.main-section-1-info{
+    flex-wrap: wrap;
+    max-width: 45em;
+    padding: 17px;
+    margin-top: 48px;
+    align-self: center;
+}
+.main-section-1-info>em{
+    font-style: oblique;
+    letter-spacing: 0;
+}
+
+/* 메인 섹션-2 영역 */
+.main-section-2{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.main-img-box{
+    width: 410px;
+    height: 410px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.main-img-thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+.main-img-thumbnail:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/* 메인 섹션-2 모달기능 */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox-image {
+    max-height: 90%;
+    min-height: 90%;
+    max-width: 100%;
+    object-fit: contain;
+    position: fixed;
+    align-self: center;
+    opacity: 1; /* 기본 상태에서 완전히 보임 */
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #bbb;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover{
+    scale: 1.2;
+    transition: 0.3s;
+  }
+
+  .main-modal-button-area{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+/* 좌우 탐색 버튼 */
+.prev, .next {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    z-index: 1001;
+    height: 90%; /* 버튼 높이 설정 */
+    width: 49%; /* 화면 절반씩 영역 차지 */
+  }
+
+  /* 버튼 아이콘 스타일 */
+  .prev::after, .next::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #bbb;
+    pointer-events: none; /* 버튼 클릭 방지 */
+  }
+  
+  .prev::after {
+    content: '<'; /* 왼쪽 버튼 */
+    left: 40px;
+  }
+  
+  .next::after {
+    content: '>'; /* 오른쪽 버튼 */
+    right: 40px;
+  }
+
+
+
+/* 메인 섹션 2 info */
+.main-section-2-info-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section-2-info-area>div>h1{
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    padding: 25px;
+}
+.main-section-2-info-area>a>button{ /* 버튼 a태그 감싸기 */
+    color: #c4b212;
+    background-color: white;
+    border: 1.6px solid #c4b212;
+    border-radius: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.03px;
+    padding: 21px 34px;
+}
+.main-section-2-info-area>a>button:hover{ /* 버튼 a태그 감싸기 */
+    color: white;
+    background-color: #c4b212;
+    transition: 0.4s;
+}
+/* -----------------메인 섹션 4 ------------------------*/
+.main-section-4-box{
+    width: 100%; /* 기본적으로 너비 100% */
+    max-width: 1228px;
+    aspect-ratio: 1.3/1;
+    overflow: hidden;
+    margin: 0 auto; /* 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section-4-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하며 박스 채우기 */
+    object-position: 50% 24%; /* 이미지 center 값 top 값 미세 위치조정 */
+}
+/* -----------------메인 섹션 4 북커버 영역--------------*/
+.main-section-4-bookCover-area{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+.main-section-4-bookCover-area>a>img{
+    width: 100%;
+}
+/* 메인 섹션 5 */
+.main-section-5-area{
+    display: flex;
+    justify-content: space-between;
+}
+.main-section-5-img-box{
+    width: 100%; /* 기본적으로 너비 100% */
+    max-width: 340px; /* 최대 크기 340px로 제한 */
+    aspect-ratio: 1/1; /* 1:1 비율 유지 */
+    overflow: hidden;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+.main-section-5-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+.main-section-5-img-card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    max-width: 340px;
+    align-self: center;
+    text-align: center;
+}
+.main-section-5-text-card{
+    letter-spacing: 0;
+}
+/* 메인 섹션 6 */
+.main-section-6-img-box{
+    width: 100%; /* 기본적으로 너비 100% */
+    max-width: 1228px;
+    aspect-ratio: 2.3/1;
+    overflow: hidden;
+    margin: 0 auto; /* 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section-6-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하며 박스 채우기 */
+    object-position: 50% 24%; /* 이미지 center 값 top 값 미세 위치조정 */
+}
+
+/* 메인 섹션 7 */
+.main-section-7{
+    width: 100%;
+    max-width: 1228px;
+    min-height: 300px;
+    background-color: #92b1c4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 31px 14px;
+}
+.main-section-7>h6{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.main-section-7-info{
+    padding: 0;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: inherit;
+}
+.main-section-7-input-area{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+.main-section-7-input-area>input{
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    min-width: 235px;
+    letter-spacing: 1px;
+}
+.main-section-7-input-area>button{
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    border-radius: 3px;
+    padding: 1em 2.5em;
+    text-align: center;
+    outline: none;
+    background-color: #92b1c4;
+    border: 1px solid #fff !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.main-section-7-input-area>button:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+}
+
+
+@media (max-width:995px) {
+    .inder-regular{
+        line-height: 1.5em;
+    }
+    
+}
+@media (max-width:772px){
+
+    .main-section-4-bookCover-area{
+        display: block;
+    }
+    .main-section-5-area{
+        display: block;
+    }
+    .inder-regular{
+        line-height: 1.2em;
+    }
+    .main-section-7-input-area{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}

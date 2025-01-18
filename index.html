@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Kurale&family=Noto+Sans+Mono:wght@200&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico">
+    <title>Rebecca Green Illustration</title>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/d41c0ade58.js" crossorigin="anonymous"></script>
+    <!-- 폰트어썸 -->
+</head>
+<body>
+    <!-- Lightbox Modal -->
+    <div id="lightbox">
+        <img id="lightbox-image" src="" alt="Enlarged Image">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="main-modal-button-area">
+            <button class="prev" onclick="changeImage(-1)"></button>
+            <button class="next" onclick="changeImage(1)"></button>
+        </div>
+    </div>
+     <!-- 고정 쿠키배너 -->
+     <section>
+        <div class="main-cookies-banner-area">
+            <div class="main-cookies-info-area">
+                <h4>
+                    By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively.
+                </h4>
+                <button type="button" onclick="cookieButton()" class="btn btn-light main-cookies-area-button">Accept</button>
+            </div>
+        </div>
+     </section>
+    <!-- 메인페이지 영역 -->
+    <section >
+        <div class="container main-container-area">
+            <!---------------------------------네브 영역----------------------------------->
+             <!-- 반응형 메뉴 네브바 -->
+             <nav class="container reaction-type-menu mb-5">
+                 <a href="./index.html">
+                    <img class="reaction-type-logo" src="./main-assets/logo_img.png" alt="..."/>
+                </a>
+                <button class="noto-sans-mono-nav-item" id="menu-button">MENU</button>
+                <span class="reaction-type-menu-item">
+                    <a class="noto-sans-mono-nav-item" href="./work/work.html">WORK</a>
+                    <a class="noto-sans-mono-nav-item" href="https://www.patreon.com/rebeccagreen" target="_blank">PATREON</a>
+                    <a class="noto-sans-mono-nav-item" href="./blog/blog.html">BLOG</a>
+                    <a class="noto-sans-mono-nav-item" href="./book/book.html">BOOKS</a>
+                    <a class="noto-sans-mono-nav-item" href="./about/about.html">ABOUT</a>
+                </span>
+             </nav>
+            <!-- 네브바 영역 -->
+             <nav class="container main-nav-area mb-5">
+                <a href="./index.html">
+                    <img class=" main-logo-img" src="./main-assets/logo_img.png" alt="...">
+                </a>
+                
+                <span class="main-nav-item-area">
+                    <a class="noto-sans-mono-nav-item" href="./work/work.html">WORK</a>
+                    <a class="noto-sans-mono-nav-item" href="https://www.patreon.com/rebeccagreen" target="_blank">PATREON</a>
+                    <a class="noto-sans-mono-nav-item" href="./blog/blog.html">BLOG</a>
+                    <a class="noto-sans-mono-nav-item" href="./book/book.html">BOOKS</a>
+                    <a class="noto-sans-mono-nav-item" href="./about/about.html">ABOUT</a>
+                </span>
+             </nav>
+              <!---------------------------------네브 영역----------------------------------->
+
+             <!-- 메인페이지 section 1 -->
+              <main class=" main-section-1 pt-3 pb-5">
+                   <img class="mb-3" src="./main-assets/main-page-img/section-1-img.jpg" alt="...">
+                   <div class="container main-section-1-info mt-5">                    
+                       <em class="inder-regular">Rebecca Green is an Illustrator & Author based in Upstate, NY.</em>
+                       <p>
+                           <div class="kurale-regular pt-3">Her hand painted illustrations showcase the timeless celebration of seasons, story, and home.</div>
+                            <div class="kurale-regular">She is most known for her work in picture books.</div>
+                        </p>
+                   </div>
+              </main>
+              <!-- 메인페이지 section 2 -->
+              <main class="row main-section-2 mt-5">
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(0)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img1.jpg" alt="Image 1">
+                    </div>
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(1)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img2.jpg" alt="Image 2">
+                    </div>
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(3)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img3.jpg" alt="Image 3">
+                    </div>
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(4)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img4.jpg" alt="Image 4">
+                    </div>
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(5)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img5.jpg" alt="Image 5">
+                    </div>
+                    <div class="col-lg-4 main-img-box">
+                        <img onclick="openLightbox(6)" class="main-img-thumbnail " src="./main-assets/main-page-img/section-2-img6.jpg" alt="Image 6">
+                    </div>
+              </main>
+              <!-- 메인페이지 section 2 work - info -->
+               <div class="main-section-2-info-area pb-5">
+                    <div class="text-center mb-4">
+                        <h1 ><strong class="inder-regular">ILLUSTRATION</strong></h1>
+                        <p>
+                            <h4 class="kurale-regular">A Portfolio of Commissioned Illustrations and Personal Work.</h4>
+                            <h5 class="kurale-regular"><em>Explore Gouache Paintings, Ink Drawings, 3D Work, & More…</em></h5>
+                        </p>
+                    </div>
+                    <a href="./work/work.html">
+                        <button class="kurale-regular">see all current work</button>
+                    </a>
+               </div>
+               <!-- 메인페이지 section 3 shop (스타일 section-1 복붙)-->
+                <main class="main-section-1">
+                    <img src="./main-assets/main-page-img/section-3-img.jpg" alt="" srcset="">
+                </main>
+                <!-- 메인페이지 section 3 - info (section-2-info 복붙)-->
+                <div class="main-section-2-info-area pb-5">
+                    <div class="text-center mb-4">
+                        <h1><strong class="inder-regular">SHOP</strong></h1>
+                        <p>
+                            <h4 class="kurale-regular">Signed Giclée Prints on Hahnemuhle Bamboo</h4>
+                            <h5 class="kurale-regular"><em>Cards, Originals, & More Coming Soon</em></h5>
+                        </p>
+                    </div>
+                    <!-- shop page 완성-------------------------------------------->
+                    <a href="./shop/shop.html"> 
+                        <button class="kurale-regular">shop now</button>
+                    </a>
+               </div>
+               <!-- 메인페이지 section 4 book (스타일 section-1 복붙)-->
+               <main class="main-section-1 main-section-4-box">
+                    <a href="./book/book.html">
+                        <img class="main-section-4-img" src="./main-assets/main-page-img/section-4-img.jpg" alt="" srcset="">
+                    </a>
+                   
+                </main>
+                <!-- 메인페이지 section 4 - info (section-2-info 복붙 & 북커버 추가) -->
+                <div class="main-section-2-info-area pb-5">
+                    <div class="text-center mb-4">
+                        <h1><strong class="inder-regular">AUTHORED & ILLUSTRATED BOOKS</strong></h1>
+                        <p>
+                            <h4 class="kurale-regular">Bears, Tightrope Walkers, Sunflowers, Letters From Kafka - and of course, Ghosts! </h4>
+                            <h5 class="kurale-regular"><em>Browse from over a dozen titles.</em></h5>
+                        </p>
+                    </div>
+                    <!--------------------------------------------------------------------------- 북커버 영역 상세페이지 링크 연결완료-->
+                    <div class="row main-section-4-bookCover-area mb-5">
+                        <a class="col-md-6 col-sm-12" href="./book/books-how1.html">
+                            <img class="" src="./main-assets/main-page-img/section-4-bookcover1.jpg" alt="" srcset="">
+                        </a>
+                        <a class="col-md-6 col-sm-12" href="./book/books-bear4.html">
+                            <img class="" src="./main-assets/main-page-img/section-4-bookcover2.jpg" alt="" srcset="">
+                        </a>
+                    </div>
+                    <a href="./book/book.html">
+                        <button class="kurale-regular">see all books >>></button>
+                    </a>
+               </div>
+               <!-- 메인페이지 section 5 (section 2&2-info 복붙 스타일명 수정 조건 수정 )-->
+               <main class="container  mt-5">
+                <!-- section5 카드 영역 -->
+                 <div class="row main-section-5-area">
+                    <div class="col mb-5">
+                        <div class="main-section-5-img-box ">
+                            <a href="./blog/blog.html">
+                                <img class="main-section-5-img" src="./main-assets/main-page-img/section-5-img1.jpg" alt="">
+                            </a>
+                             
+                        </div>
+                       
+                        <div class="container main-section-2-info-area mt-4">
+                            <div class="text-center mb-4">
+                                <h3><strong class="main-section-5-text-card inder-regular">ILLUSTRATION BLOG</strong></h3>
+                                <p>
+                                    <h5 class="kurale-regular pt-3"><em>More than a decade of posts featuring projects, tips, and musings on the creative process.</em></h5>
+                                </p>
+                            </div>
+                            <a href="./blog/blog.html">
+                                <button class="kurale-regular">latest post ></button>
+                            </a>
+                       </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="main-section-5-img-box">
+                            <a href="https://www.patreon.com/rebeccagreen" target="_blank">
+                                <img  class="main-section-5-img" src="./main-assets/main-page-img/section-5-img2.jpg" alt="...">
+                            </a>
+                        </div>
+                        
+                        <div class="main-section-2-info-area mt-4">
+                            <div class="text-center mb-4">
+                                <h3 ><strong class="main-section-5-text-card inder-regular">THE DESSERT CLUB</strong></h3>
+                                <p >
+                                    <h5 class="kurale-regular pt-3"><em>A deep dive behind the scenes. Painting videos, community chat, illustrated recipes, and more.</em></h5>
+                                </p>
+                            </div>
+                            <a href="https://www.patreon.com/rebeccagreen" target="_blank">
+                                <button class="kurale-regular">join patreon ></button>
+                            </a>
+                       </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="main-section-5-img-box">
+                            <img  class="main-section-5-img" src="./main-assets/main-page-img/section-5-img3.jpg" alt="...">
+                        </div>
+                        
+                        <div class="main-section-2-info-area mt-4">
+                            <div class="text-center mb-4">
+                                <h3 ><strong class="main-section-5-text-card inder-regular">MONTHLY BULLETIN</strong></h3>
+                                <p >
+                                    <h5 class="kurale-regular pt-3"><em>A fresh little newsletter in your inbox to welcome each month, full of updates and treasures.</em></h5>
+                                </p>
+                            </div>
+                            <!------------ bulletin page 완성-------->
+                            <a href="./bulletin/bulletin.html">
+                                <button class="kurale-regular">subscribe ></button>
+                            </a>
+                       </div>
+                    </div>
+                 </div>
+                </main>
+
+                <!-- 메인페이지 section 6 about me...-->
+                 <main class="container mt-5">
+                    <div class="main-section-6-img-box">
+                        <img class="main-section-6-img" src="./main-assets/main-page-img/section-6-img.jpg" alt="">
+                    </div>
+                    <div class="main-section-2-info-area mt-5">
+                        <div class="text-center mb-4">
+                            <h3 ><strong class="inder-regular">A LITTLE ABOUT ME…</strong></h3>
+                            <p>
+                                <h5 class="kurale-regular">I’m an illustrator & author with a serious weakness for coffee and dogs.</h5>
+                            </p>
+                        </div>
+                        <a href="./about/about.html">
+                            <button class="kurale-regular">meet the artist ></button>
+                        </a>
+                   </div>
+                 </main>
+
+                 <!-- 메인페이지 section 7 subscribe -->
+                 <main class="container main-section-7 text-center mt-5">
+                    <h2><strong class="inder-regular">MONTHLY NEWSLETTER</strong></h2>
+                    <p>
+                        <h5 class="main-section-7-info kurale-regular">A Fresh Newsletter to Welcome the Month + A Free Gouache Tutorial!</h5>
+                    </p>
+                    <div class="main-section-7-input-area kurale-regular mt-3 mb-4">
+                        <input type="email" name="..." id="..." placeholder="Email Address"/>
+                        <button class="kurale-regular">subscribe</button>
+                    </div>
+                    <h6 class="kurale-regular">We respect your privacy.</h6>
+
+                 </main>
+
+                  <!-- 풋터 영역 -->
+                  <footer>
+                    <div class="grid gap-3">
+                      <div class="p-2 g-col-12"></div>
+                      <div class="p-2 g-col-12"></div>
+                    </div>
+            
+                    <div class="container">
+                      <div class="footer-line mt-5"></div>
+            
+                      <div>
+                        <div class="pb-5 pt-5">
+                          <div class="row">
+                            <div class="col footer-dot text-center noto-sans-mono-nav-item">
+                              <a href="../blog/blog.html">BLOG</a> • <a href="#">WORK</a> •
+                              <a href="https://www.patreon.com/rebeccagreen" target="_blank"
+                                >PATREON</a
+                              >
+                              • <a href="../bulletin/bulletin.html">BULLETIN</a> •
+                              <a href="../book/book.html">BOOKS</a> •
+                              <a href="../about/about.html">ABOUT</a> •
+                              <a href="https://www.myblankpaper.com/faq">FAQ</a>
+                            </div>
+                          </div>
+            
+                          <p class="row"></p>
+                          <div
+                            class="footer-second-info col footer-dot text-center kurale-regular"
+                          >
+                            Proud Member of the
+                            <a href="https://artbrandalliance.com/">Art Brand Alliance</a> •
+                            Site photography by
+                            <a href="https://www.instagram.com/juliaross/">Julia Ross</a>
+                          </div>
+                          <p class="row"></p>
+            
+                          <div class="row">
+                            <div
+                              class="footer-third-line col footer-dot text-center kurale-regular"
+                            >
+                              ALL IMAGES © REBECCA GREEN, 2023 | ALL RIGHTS RESERVED
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="text-center pb-5 icon-container">
+                        <i
+                          class="fa-brands fa-instagram fa-xl pe-2"
+                          onclick="window.open('https://www.instagram.com/rebeccagreenillustration/#')"
+                        ></i>
+                        <i
+                          class="fa-brands fa-pinterest fa-xl"
+                          onclick="window.open('https://kr.pinterest.com/rebeccagreen/')"
+                        ></i>
+                      </div>
+                    </div>
+                  </footer>
+
+       
+
+
+
+        </div>
+      </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

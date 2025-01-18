@@ -1,0 +1,95 @@
+* {
+  user-select: none;
+}
+
+.blog-container-area {
+  padding: 45px;
+  font-family: "Kurale", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  min-height: 101vh;
+}
+
+.row {
+  /* padding: 0 12px; */
+}
+
+#post {
+  padding: 0;
+  text-align: left;
+}
+
+.post-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-image > span {
+  width: 100%;
+  text-align: left;
+}
+
+.date {
+  color: #919088;
+}
+
+#gallery {
+  padding: 0;
+  text-align: left;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gallery_dropdown {
+  display: block;
+}
+
+.pagination {
+  padding: 20px 0;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+
+/* 설정 */
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.full-width-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.caption {
+  font-size: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
