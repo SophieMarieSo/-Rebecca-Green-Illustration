@@ -42,6 +42,11 @@
   text-align: left;
 }
 
+.year {
+  font-family: "Inder", serif;
+  font-size: 30px;
+}
+
 .card {
   border: none;
 }

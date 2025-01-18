@@ -12,6 +12,12 @@ export class Gallery {
   }
 
   async createDiv() {
+    const yearNumber = this.archive[this.blog.currentArchiveNumber][0].year;
+    const year = document.createElement("h2");
+    year.className = "year mt-4";
+    year.textContent = yearNumber;
+    this.gallery.appendChild(year);
+
     this.archive[this.blog.currentArchiveNumber].forEach((item, i) => {
       const card = document.createElement("div");
       card.className = "card mt-4";
