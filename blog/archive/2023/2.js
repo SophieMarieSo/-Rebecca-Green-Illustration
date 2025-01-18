@@ -1,5 +1,5 @@
 export const detail = {
-  title: "Instagram, I love you but I hate you so.",
+  title: "Humbled by Ceramics | A Beginner's Mindset",
   date: "2023-01-15",
   thumb: "thumb.jpg",
   imageEnable: false,
