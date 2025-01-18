@@ -10,7 +10,7 @@ export class Blog {
     this.search = document.getElementById("search");
     this.post = document.getElementById("post");
     this.archive = [];
-    this.currentArchiveNumber = 0;
+    this.currentArchiveNumber = 1;
     this.currentPageNumber = 0;
     this.init();
   }
