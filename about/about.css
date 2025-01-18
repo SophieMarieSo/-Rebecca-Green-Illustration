@@ -14,7 +14,7 @@ body{
     font-family: "Inder", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 2em;
   }
@@ -162,108 +162,263 @@ body{
         display: block;
     }
 }
+.divider {
+    border-top: 1px solid #bbb;
+  }
+  
+  .masonry {
+    display: flex;
+    width: auto;
+  }
+  
+  .masonry-item {
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    display: block;
+  }
+  
+  .img-container {
+    position: relative;
+    display: inline-block;
+  
+    .img-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255, 0.75);
+      color: black;
+      font-family: 'Inder', serif;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 300;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+  
+    .img-hover {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .img-container:hover {
+    cursor: pointer;
+  
+    .img-title {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.icon-container {
+    .fa-instagram {
+      color: #e4405f;
+    }
+  
+    .fa-pinterest {
+      color: #cb2127;
+    }
+  
+    .fa-instagram:hover,
+    .fa-pinterest:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  }
 /*--------------------------- footer 영역 관련----------------------- */
 
-/*-- 메인페이지 section 1 --*/
-.about-img-box{
-    width: 370px;
-    height: 433px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.about-section-1{
+/*-- 메인페이지 section 1&1-1 --*/
+.about-main-section-1{
     display: flex;
-    flex-wrap: wrap; /* 반응형 줄바꿈 */
+    gap: 25px;
     justify-content: space-between;
-     align-items: flex-start;
+    max-height: min-content;
 }
+.about-main-section-1-1{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    max-height: min-content;
+}
+.about-section-1-text-area {
+    text-align: start;
+    flex: 1.5;
 
-.about-text{
+}
+.about-img-box{
     flex: 1;
-    min-width: 300px;
-    margin-right: 20px;
-    text-align: left;
-  }
-
-.bulletin-img-box2 {
-    flex: 1;
-    min-width: 300px;
-    width: 421px; /* 가로는 자동 조정 */
-    height: 500px; /* 두 박스의 동일한 높이 설정 */
-    overflow: hidden; /* 넘치는 부분 숨김 */
-    margin: 0 auto; /* 중앙 정렬 */
+    width: 100%;
+    height: 100%;
+    max-height: inherit;
+    aspect-ratio: 1/1.2;
+    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding:0;
-  }
-
-.bulletin-img-box2>img {
-    max-width: 100%;
-    height: auto;  /* 부모 높이에 맞춤 */
-    object-fit: cover; /* 비율 유지하며 꽉 채움 */
-  }
-
-  @media screen and (max-width: 768px) {
-    .about-section-1 {
-      flex-direction: column;
-    }
-    .about-text {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-
-  a{
+    justify-content: space-between;
+    overflow: hidden;
+    align-self: center;
+}
+.about-img-box>img{
+    width: 100%;
+    height: 100%;
+}
+.about-text-box>div{
+    padding: 10px 0px;
+}
+.about-text-box a{
     text-decoration: none;
-  }
-
-  body a{
     color: #92b1c4;
-  }
+}
 
-  .main-section-6-img-box{
+.about-text-area{
+    margin-left: 80px;
+}
+@media (max-width:940px) {
+    .about-main-section-1{
+        flex-direction: column-reverse;
+    }
+    .about-main-section-1-1{
+        flex-direction: column;
+    }
+}
+/*-------------------- 메인페이지 section 1&1-1 --*/
+/*------- 메인 섹션-2------ */
+
+.about-section-2-box{
     width: 100%; /* 기본적으로 너비 100% */
     max-width: 1228px;
-    aspect-ratio: 2.3/1;
+    aspect-ratio: 1.3/0.6;
     overflow: hidden;
     margin: 0 auto; /* 가운데 정렬 */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.main-section-6-img{
+.about-section-2-img{
     width: 100%;
     height: 100%;
     object-fit: cover; /* 이미지 비율 유지하며 박스 채우기 */
-    object-position: 50% 24%; /* 이미지 center 값 top 값 미세 위치조정 */
+    object-position: 50% 48%; /* 이미지 center 값 top 값 미세 위치조정 */
 }
-
-.about-gallery{
+.about-section-2-text-area {
+    text-align: start;
+}
+.about-section-2-text-area>a{
+    text-decoration: none;
+    color: #92b1c4;
+}
+/* -----------------------------------메인 섹션-2 */
+/* ---------메인 섹션 3------ */
+.about-section-3-area{
     display: flex;
+    text-align: start;
 }
-
-.about-gallery-img>div>img{
-    width: 100px;
+.about-link-area{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
 }
-
-.about-section-5{
+.about-link-area>a{
+    text-decoration: none;
+    color: #92b1c4;
+}
+.about-select-title-area{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:1000px) {
+    .about-section-3-area{
+        flex-direction: column-reverse;
+    }
+    .about-select-title-area{
+        margin-bottom: 20px;
+    }
+    .about-link-area{
+        width: 100%;
+    }
+}
+/* -----------------------------------메인 섹션-3 */
+/* ---------메인 섹션 4------ */
+.about-clients-area{
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
 
-.about-section-5-img-box>img{
-    width: 513px;
-    margin-left: 150px;
+.about-clients-logo-box{
+    max-width: 100px;
+    max-height: 100px;
+}
+.about-clients-logo-box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width:800px) {
+    .about-clients-logo-box{
+        max-width: 311px;
+        margin-bottom: 20px;
+        
+    }
+    .about-title{
+        font-size: 23px;
+    }
 }
 
-.about-text-area{
-    margin-left: 80px;
+/* -----------------------------------메인 섹션-4 */
+/* ---------메인 섹션 5------ */
+.about-section-5-area{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    width: 100%;
+    gap: 30px;
 }
+.about-section-6-img-box{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto; /* 가운데 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1.5;
+}
+.about-section-6-img-box>img{
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    
+}
+.about-section-5-text{
+    flex: 1;
+}
+.about-section-5-text a{
+    text-decoration: none;
+    color: #92b1c4;
+}
+@media (max-width:1000px) {
+    .about-section-5-area{
+        flex-direction: column;
+    }
+    .about-section-6-img-box>img{
+        width: 100%;
+    }
+}
+/* -----------------------------------메인 섹션-5 */
 
-/* 메인 섹션-2 영역 인스타그램*/
 .main-section-2{
     padding: 0;
     display: flex;
