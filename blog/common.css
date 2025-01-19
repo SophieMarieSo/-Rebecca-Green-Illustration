@@ -129,6 +129,10 @@ body {
 }
 /* ----------------------footer 영역 관련 --------------------*/
 
+.footer {
+  padding: 45px;
+}
+
 .footer-line {
   border: none;
   color: #bbb;
